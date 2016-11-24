@@ -1,0 +1,79 @@
+{
+  "title": "Untitled Note",
+  "cells": [
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "\\begin{align}\n  \\nabla \\times \\vec{\\mathbf{B}} -\\, \\frac1c\\, \\frac{\\partial\\vec{\\mathbf{E}}}{\\partial t} & = \\frac{4\\pi}{c}\\vec{\\mathbf{j}} \\\\\n  \\nabla \\cdot \\vec{\\mathbf{E}} & = 4 \\pi \\rho \\\\\n  \\nabla \\times \\vec{\\mathbf{E}}\\, +\\, \\frac1c\\, \\frac{\\partial\\vec{\\mathbf{B}}}{\\partial t} & = \\vec{\\mathbf{0}} \\\\\n  \\nabla \\cdot \\vec{\\mathbf{B}} & = 0\n\\end{align}"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "markdown",
+      "data": "[I'm an inline-style link](https://www.google.com)\n    http://example.com"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "[\\text{feature_matr ix}] =\n\\left[\n\\begin{array}{c}\nh(\\mathbf{x}_1)^T \\\\\nh(\\mathbf{x}_2)^T \\\\\n\\vdots \\\\\nh(\\mathbf{x}_N)^T\n\\end{array}\n\\right] =\n\\left[\n\\begin{array}{cccc}\nh_0(\\mathbf{x}_1) & h_1(\\mathbf{x}_1) & \\cdots & h_D(\\mathbf{x}_1) \\\\\nh_0(\\mathbf{x}_2) & h_1(\\mathbf{x}_2) & \\cdots & h_D(\\mathbf{x}_2) \\\\\n\\vdots & \\vdots & \\ddots & \\vdots \\\\\nh_0(\\mathbf{x}_N) & h_1(\\mathbf{x}_N) & \\cdots & h_D(\\mathbf{x}_N)\n\\end{array}\n\\right]"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "markdown",
+      "data": "| Tables        | Are           | Cool  |\n    | ------------- |:-------------:| -----:|\n    | col 3 is      | right-aligned | $1600 |\n    | col 2 is      | centered      |   $12 |\n    | zebra stripes | are neat      |    $1 |"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Hive SQL store table on Hue",
+  "cells": [
+    {
+      "type": "code",
+      "language": "sql",
+      "data": "set mapred.reduce.tasks=50;\r\rselect D.serial_number, D.test_start_time, D.line, D.machine,  if(C.serial_number is null,'No','Yes') from \r(select serial_number,test_result,test_start_time,version,line,machine,test_type,slot,items,hour,model,station\rfrom (select serial_number,test_result,test_start_time,version,line,machine,test_type,slot,items,hour,model,station\rfrom cpk.mlb_test_log_detail\rwhere model = 'N71' and\rstation = 'FCT' and\rhour between '2016-05-03_00' and '2016-05-20_24' and\rupper(test_result) = 'PASS' and\rsubstr(line,7,3) not in ('CRB','CRT') and\ritems['VA_compass_average_z'] > 352.6529 and items['CT_gpu_perf2_0_delta'] < 60.4166 and \ritems['VA_compass_average_z'] > 441.329 and items['buck0_perf4_pwm_pfm_delta'] > 2.1367\r) X\r) D\rleft join \r(SELECT DISTINCT A.serial_number\rFROM (select serial_number, add_date\rfrom (SELECT serial_number, add_date, row_number() over (partition by serial_number order by add_date) rankno\rFROM cpk.mlb_rpc_stage\rWHERE day between '2016-05-03' AND '2016-06-10' and\rnamec = 'CRB Check In' AND\r(substr(code,1,2) = 'MS' OR substr(code,1,3) = 'MAS')\r) X where rankno = 1\r) A INNER JOIN\r(SELECT serial_number,fail_location, add_date\rFROM cpk.mlb_rpc_stage\rWHERE day between '2016-05-03' AND '2016-06-15' and\rfail_location = 'U3000'\r) B\rON A.serial_number = B.serial_number\rwhere A.add_date >= B.add_date\r) C\ron D.serial_number = C.serial_number\r"
+    }
+  ]
+}

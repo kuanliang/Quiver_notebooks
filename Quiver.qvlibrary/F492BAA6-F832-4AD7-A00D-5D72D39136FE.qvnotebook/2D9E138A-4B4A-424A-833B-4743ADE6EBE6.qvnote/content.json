@@ -1,0 +1,14 @@
+{
+  "title": "export proxy",
+  "cells": [
+    {
+      "type": "code",
+      "language": "python",
+      "data": "export http_proxy=http://22398:1qaz2wsx@10.191.131.2:3128\nexport https_proxy=http://22398:1qaz2wsx@10.191.131.2:3128"
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

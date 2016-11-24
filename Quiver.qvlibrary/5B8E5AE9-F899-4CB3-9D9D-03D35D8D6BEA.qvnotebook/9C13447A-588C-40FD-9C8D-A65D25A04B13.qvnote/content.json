@@ -1,0 +1,9 @@
+{
+  "title": "How to Write a Git Commit Message",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<a href=\"http://chris.beams.io/posts/git-commit/\">http://chris.beams.io/posts/git-commit/</a>"
+    }
+  ]
+}

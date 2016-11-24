@@ -1,0 +1,12 @@
+{
+  "created_at" : 1472468615,
+  "tags" : [
+    "Spark",
+    "SparkML",
+    "SparkSQL",
+    "SQL"
+  ],
+  "title" : "transform MAP to SparkDF (ML)",
+  "updated_at" : 1473076560,
+  "uuid" : "667C7960-EE77-4055-882F-5381549D501C"
+}

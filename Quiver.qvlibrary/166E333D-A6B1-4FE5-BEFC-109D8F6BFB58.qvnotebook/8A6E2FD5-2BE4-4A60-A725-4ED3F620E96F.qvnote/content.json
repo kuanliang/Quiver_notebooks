@@ -1,0 +1,25 @@
+{
+  "title": "GPU server information",
+  "cells": [
+    {
+      "type": "text",
+      "data": "GPU 1:&nbsp;<div>IP: 10.251.170.101</div><div>username: fae</div><div>pw: 123456</div><div><br><div>GPU 2:&nbsp;</div><div>IP: 10.251.170.100</div><div><div>username: fae</div><div>pw: 123456</div></div><div><br></div><div>Jupyter Notebook 1:</div><div>(original. tensorflow)</div><div><a href=\"http://10.251.170.101:32448/tree\">http://10.251.170.101:32448/tree</a><br></div><div><br></div><div>Jupyter Notebook 2:</div><div>(defectlib environmental setup)</div><div><a href=\"http://10.251.170.101:32449/\">http://10.251.170.101:32449/</a><br></div><div><br></div><div>DIGITS:&nbsp;<br><div><div><a href=\"http://10.251.170.101:34468/\">http://10.251.170.101:34468</a><br></div></div></div></div>"
+    },
+    {
+      "type": "text",
+      "data": "Shared Folder<div><p style=\"margin: 0px; font-size: 12px; line-height: normal; font-family: Courier; color: rgb(255, 240, 165); background-color: rgb(19, 119, 62);\">10.251.170.100:/data/nfs/tensorflow_volume_gpu/</p></div>"
+    },
+    {
+      "type": "text",
+      "data": "ssh&nbsp;"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

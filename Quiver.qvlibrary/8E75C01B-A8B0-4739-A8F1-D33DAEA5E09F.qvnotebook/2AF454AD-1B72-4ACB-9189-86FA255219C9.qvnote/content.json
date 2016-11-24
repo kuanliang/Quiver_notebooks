@@ -1,0 +1,57 @@
+{
+  "title": "A Step by Step Backpropagation Example",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div>How Neural Networks are trained?</div>"
+    },
+    {
+      "type": "text",
+      "data": "The gradiant points to the direction that maximally changes in an increasing way of function, thus a&nbsp;"
+    },
+    {
+      "type": "text",
+      "data": "<a href=\"https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/\">https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/</a>"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/6BCFDF5260047C76DC8E2E4C2079EC2C.jpg\">"
+    },
+    {
+      "type": "text",
+      "data": "Initial weights, the biases, and training inputs/outputs"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/A7389A5AE7E3A036B1F16190BEA280EA.jpg\">"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/FF39F2194CF02DFE879FEB6B6C8CE399.jpg\">"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/BC219E9E4067D30F47722646032DD588.jpg\">"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/8CE8380CEA0C1D35907DAABF2F9D1304.jpg\">"
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

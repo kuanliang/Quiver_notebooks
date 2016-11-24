@@ -1,0 +1,65 @@
+{
+  "title": "Convolutional",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/7474948BE42B96FBC0FAECAD78B02F93.jpg\">"
+    },
+    {
+      "type": "text",
+      "data": "Convolution operation"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/CB654E9D5C56ADABC660ADE7B4F74800.jpg\">"
+    },
+    {
+      "type": "text",
+      "data": "b"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/99DA910A7855E3F3E90BFB2CB075D915.jpg\"><br>"
+    },
+    {
+      "type": "text",
+      "data": "A filter slides over the input image (convolution operation) to produce a feature map.&nbsp;"
+    },
+    {
+      "type": "text",
+      "data": "<span style=\"color: rgb(109, 109, 109); font-family: 'Noticia Text', serif; font-size: 16px; orphans: 2; text-align: justify; widows: 2; background-color: rgb(255, 255, 255);\">In practice, a CNN&nbsp;</span><em style=\"box-sizing: inherit; line-height: inherit; color: rgb(109, 109, 109); font-family: 'Noticia Text', serif; font-size: 16px; orphans: 2; text-align: justify; widows: 2; background-color: rgb(255, 255, 255);\">learns</em><span style=\"color: rgb(109, 109, 109); font-family: 'Noticia Text', serif; font-size: 16px; orphans: 2; text-align: justify; widows: 2; background-color: rgb(255, 255, 255);\">&nbsp;the values of these filters on its own during the traininyg process (although we still need to specify parameters such as&nbsp;</span><span style=\"box-sizing: inherit; color: rgb(109, 109, 109); font-family: 'Noticia Text', serif; font-size: 16px; orphans: 2; text-align: justify; widows: 2; background-color: rgb(255, 255, 255); text-decoration: underline;\">number of filters</span><span style=\"color: rgb(109, 109, 109); font-family: 'Noticia Text', serif; font-size: 16px; orphans: 2; text-align: justify; widows: 2; background-color: rgb(255, 255, 255);\">,&nbsp;</span><span style=\"box-sizing: inherit; color: rgb(109, 109, 109); font-family: 'Noticia Text', serif; font-size: 16px; orphans: 2; text-align: justify; widows: 2; background-color: rgb(255, 255, 255); text-decoration: underline;\">filter size</span><span style=\"color: rgb(109, 109, 109); font-family: 'Noticia Text', serif; font-size: 16px; orphans: 2; text-align: justify; widows: 2; background-color: rgb(255, 255, 255);\">,&nbsp;</span><span style=\"box-sizing: inherit; color: rgb(109, 109, 109); font-family: 'Noticia Text', serif; font-size: 16px; orphans: 2; text-align: justify; widows: 2; background-color: rgb(255, 255, 255); text-decoration: underline;\">architecture of the network</span><span style=\"color: rgb(109, 109, 109); font-family: 'Noticia Text', serif; font-size: 16px; orphans: 2; text-align: justify; widows: 2; background-color: rgb(255, 255, 255);\">etc. before the training process).&nbsp;</span><span style=\"color: rgb(109, 109, 109); font-family: 'Noticia Text', serif; font-size: 16px; orphans: 2; text-align: justify; widows: 2; background-color: rgb(255, 255, 255);\">The more number of filters we&nbsp;have, the more image features get extracted and the better our network becomes at recognizing&nbsp;patterns in unseen images.</span><br>"
+    },
+    {
+      "type": "markdown",
+      "data": "ReLU - Rectified Linear Unit"
+    },
+    {
+      "type": "text",
+      "data": "Max Pooling"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/95FDC9B6C4EB8C0A1F9C7A1C48E8733B.jpg\">"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/20A9D5ADA9F37474973AEA2100457E19.jpg\">"
+    },
+    {
+      "type": "markdown",
+      "data": "The functgion of pooling is to progressively reduce the spatial size of the input representation. In particular, pooling\n- makes the input representation (feature dimension) smaller and more manageable\n- reduces the number of parameters and computations in the network, therefore, controlling overfitting.\n- makes the network invariant to small transformations, distortions and translations in the input image (a small distortion in input will not change the output of pooling - since we take the maximum / average value in a local neighborhood)\n- helps us arrive at an almost scale invariant representation of our image ( the exact term is \"equivariant\"). This is very powerful since we can detect objects in an image no matter where they are located. "
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/8D12F636F858F5DA6FD860076D675B83.jpg\">"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/B61AECB159152EEDFDF370A9064845FB.jpg\">"
+    }
+  ]
+}

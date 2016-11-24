@@ -1,0 +1,19 @@
+{
+  "title": "transform MAP (key:value paris) to Spark DataFrame",
+  "cells": [
+    {
+      "type": "code",
+      "language": "python",
+      "data": "def isFloat(x):\n    try:\n        float(x)\n        return True\n    except:\n        return False"
+    },
+    {
+      "type": "text",
+      "data": "itemsDf is a map RDD"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "itemValuesDf = (passDf[['items']].map(lambda x: x.items)\n                                 .map(lambda x: [x[col] if col in colInfo['preprocess']['final'] else np.nan for col in colInfo['preprocess']['final']])\n                                 .map(lambda x: [float(a) if isFloat(a) else np.nan for a in x]))"
+    }
+  ]
+}

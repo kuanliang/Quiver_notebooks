@@ -1,0 +1,34 @@
+{
+  "title": "Generate Pandas DataFrame from dictionary",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "# Description:"
+    },
+    {
+      "type": "markdown",
+      "data": "Transform a Python dictionary to a Pandas dictionary. There are several dictionary forms:\n\n**1. {COLUMN: VALUE} **\n\n{column1: value1, column2: value2, ... columnN: valueN}"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "markdown",
+      "data": ""
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "exampleDic = {"
+    }
+  ]
+}

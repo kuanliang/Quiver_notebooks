@@ -1,0 +1,17 @@
+{
+  "title": "Different NNs",
+  "cells": [
+    {
+      "type": "text",
+      "data": "CNN - Convolutional Neural Network"
+    },
+    {
+      "type": "text",
+      "data": "RNN - Recurrent Neural Network"
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

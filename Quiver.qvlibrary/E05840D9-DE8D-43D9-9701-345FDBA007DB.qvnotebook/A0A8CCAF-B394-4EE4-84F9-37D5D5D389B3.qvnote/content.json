@@ -1,0 +1,54 @@
+{
+  "title": "Logistic Regression",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "# feature matrix"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$$\n[\\text{feature_matrix}] =\n\\left[\n\\begin{array}{c}\nh(\\mathbf{x}_1)^T \\\\\nh(\\mathbf{x}_2)^T \\\\\n\\vdots \\\\\nh(\\mathbf{x}_N)^T\n\\end{array}\n\\right] =\n\\left[\n\\begin{array}{cccc}\nh_0(\\mathbf{x}_1) & h_1(\\mathbf{x}_1) & \\cdots & h_D(\\mathbf{x}_1) \\\\\nh_0(\\mathbf{x}_2) & h_1(\\mathbf{x}_2) & \\cdots & h_D(\\mathbf{x}_2) \\\\\n\\vdots & \\vdots & \\ddots & \\vdots \\\\\nh_0(\\mathbf{x}_N) & h_1(\\mathbf{x}_N) & \\cdots & h_D(\\mathbf{x}_N)\n\\end{array}\n\\right]\n$$"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "By the rules of matrix multiplication, the score vector containing elements $\\mathbf{w}^T h(\\mathbf{x}_i)$ is obtained by multiplying **feature_matrix** and the coefficient vector $\\mathbf{w}$.\n$$\n[\\text{score}] =\n[\\text{feature_matrix}]\\mathbf{w} =\n\\left[\n\\begin{array}{c}\nh(\\mathbf{x}_1)^T \\\\\nh(\\mathbf{x}_2)^T \\\\\n\\vdots \\\\\nh(\\mathbf{x}_N)^T\n\\end{array}\n\\right]\n\\mathbf{w}\n= \\left[\n\\begin{array}{c}\nh(\\mathbf{x}_1)^T\\mathbf{w} \\\\\nh(\\mathbf{x}_2)^T\\mathbf{w} \\\\\n\\vdots \\\\\nh(\\mathbf{x}_N)^T\\mathbf{w}\n\\end{array}\n\\right]\n= \\left[\n\\begin{array}{c}\n\\mathbf{w}^T h(\\mathbf{x}_1) \\\\\n\\mathbf{w}^T h(\\mathbf{x}_2) \\\\\n\\vdots \\\\\n\\mathbf{w}^T h(\\mathbf{x}_N)\n\\end{array}\n\\right]\n$$"
+    },
+    {
+      "type": "markdown",
+      "data": "# Estimating conditional probability with link function"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$$\nP(y_i = +1 | \\mathbf{x}_i,\\mathbf{w}) = \\frac{1}{1 + \\exp(-\\mathbf{w}^T h(\\mathbf{x}_i))},\n$$"
+    },
+    {
+      "type": "markdown",
+      "data": "# Log Likelihood "
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$$\\ell\\ell(\\mathbf{w}) = \\sum_{i=1}^N \\Big( (\\mathbf{1}[y_i = +1] - 1)\\mathbf{w}^T h(\\mathbf{x}_i) - \\ln\\left(1 + \\exp(-\\mathbf{w}^T h(\\mathbf{x}_i))\\right) \\Big) $$"
+    },
+    {
+      "type": "markdown",
+      "data": "# Derivative of the log likelihood function"
+    },
+    {
+      "type": "latex",
+      "language": "latex",
+      "data": "$$\n\\frac{\\partial\\ell}{\\partial w_j} = \\sum_{i=1}^N h_j(\\mathbf{x}_i)\\left(\\mathbf{1}[y_i = +1] - P(y_i = +1 | \\mathbf{x}_i, \\mathbf{w})\\right)\n$$"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

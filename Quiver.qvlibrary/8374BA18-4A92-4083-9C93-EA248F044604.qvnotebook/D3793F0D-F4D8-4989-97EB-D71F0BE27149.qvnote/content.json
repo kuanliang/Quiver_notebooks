@@ -1,0 +1,14 @@
+{
+  "title": "convert a set of images to video with avconv",
+  "cells": [
+    {
+      "type": "code",
+      "language": "perl",
+      "data": "avconv -f image2 -i 1AAAAAA_%d.jpg -r 76 -s 800x600 foo1.avi"
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

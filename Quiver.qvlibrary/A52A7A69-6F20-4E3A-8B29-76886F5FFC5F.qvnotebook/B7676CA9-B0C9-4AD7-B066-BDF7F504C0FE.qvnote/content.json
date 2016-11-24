@@ -1,0 +1,41 @@
+{
+  "title": "setting commands ",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "## IPD gitlabl"
+    },
+    {
+      "type": "text",
+      "data": "git config —global user.name ‘Andy.KL’<div>git config —global user.email andy.kl.liu@mail.foxconn.com</div>"
+    },
+    {
+      "type": "markdown",
+      "data": "## public github"
+    },
+    {
+      "type": "text",
+      "data": "git config —global user.name ‘kuanliang’<div>git config —global user.email kiangliu@gmail.com</div>"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

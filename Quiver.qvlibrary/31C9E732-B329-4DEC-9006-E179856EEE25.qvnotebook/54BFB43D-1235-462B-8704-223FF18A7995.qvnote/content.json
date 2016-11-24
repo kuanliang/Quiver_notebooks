@@ -1,0 +1,53 @@
+{
+  "title": "Python String translate() Method",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "# Description\nThe method **translate()** returns a copy of the string in which all characters have been translated using _table_ (consturcted with the maketrans() function in the string module), optionally deleting all characters found in the string deletechars.\n# Syntax\nFollowing is the syntax for **translate()** method -"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "str.translate(table[, deletechars]);"
+    },
+    {
+      "type": "markdown",
+      "data": "# Parameters\n- **table** -- You can use the maketrans() helper function in the string module to create a translation table.\n- **deletechars** -- The list of characters to be removed from the source string.\n\n# Return Value\nThis method returns a translated copy of the string.\n\n# Example\nThe following example shows the usage of translate() method. Under this every vowel in a string is replaced by its vowel position -"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "from string import maketrans\n\nintab = \"aeiou\"\nouttab = \"12345\"\ntrantab = maketrans(intab, outtab)\n\nstr = \"this is string example....wow!!!\"\nprint str.translate(trantab)"
+    },
+    {
+      "type": "text",
+      "data": "<pre style=\"box-sizing: border-box; overflow: auto; font-size: 14px; padding: 0px; margin-top: 0px; margin-bottom: 0px; line-height: 17.0001px; word-break: break-all; word-wrap: break-word; color: rgb(0, 0, 0); border: 0px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; white-space: pre-wrap; vertical-align: baseline; orphans: 2; widows: 2; background-color: rgb(255, 255, 255);\">th3s 3s str3ng 2x1mpl2...w4w!!!</pre>"
+    },
+    {
+      "type": "markdown",
+      "data": "### remove punctuation"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "string.punctuation"
+    },
+    {
+      "type": "markdown",
+      "data": "'!\"#$%&\\'()*+,-./:;<=>?@[\\\\]^_`{|}~'"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "print testString.translate(trantab, string.punctuation)"
+    },
+    {
+      "type": "text",
+      "data": "<pre style=\"box-sizing: border-box; overflow: auto; font-size: 14px; padding: 0px; margin-top: 0px; margin-bottom: 0px; line-height: 17.0001px; word-break: break-all; word-wrap: break-word; color: rgb(0, 0, 0); border: 0px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; white-space: pre-wrap; vertical-align: baseline; orphans: 2; widows: 2; background-color: rgb(255, 255, 255);\">th3s 3s str3ng 2x1mpl2w4w</pre>"
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

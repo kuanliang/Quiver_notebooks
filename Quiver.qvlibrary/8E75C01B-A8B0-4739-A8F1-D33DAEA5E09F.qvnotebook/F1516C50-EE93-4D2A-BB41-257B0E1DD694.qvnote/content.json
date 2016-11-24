@@ -1,0 +1,9 @@
+{
+  "title": "A guide to convolution arithmetic for deeplearning",
+  "cells": [
+    {
+      "type": "text",
+      "data": "A convolutional layer’s output shape is affected by the shape of its input as well as the choice of kernel shape, zero padding and strides, and the relations"
+    }
+  ]
+}

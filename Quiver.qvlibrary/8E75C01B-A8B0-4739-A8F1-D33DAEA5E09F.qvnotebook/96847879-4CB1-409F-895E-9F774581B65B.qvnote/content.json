@@ -1,0 +1,31 @@
+{
+  "title": "Theano",
+  "cells": [
+    {
+      "type": "code",
+      "language": "python",
+      "data": "import numpy as np\nimport theano.tensor as T\nfrom theano import function\nfrom theano import pp\nfrom IPython.display import Image"
+    },
+    {
+      "type": "markdown",
+      "data": "**Basic:**"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "# step1. define two symbols (Variables)\nx = T.dscalar('x')\ny = T.dscalar('y')\n\n# step2. build symbolic expression (combine x and y into their sum z)\nz = x + y\n\n# step3. compile function\n#        create a function taking x and y as inpputs and giving z as output\n#        the first argument is a list of Variables that will be provided as inputs to the function\n#        the second argument is a single Variable or a list of Variables\n# f was being compliled into C code\nf = function([x, y], z)"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

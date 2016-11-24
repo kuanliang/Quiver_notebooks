@@ -1,0 +1,23 @@
+{
+  "title": "create a table",
+  "cells": [
+    {
+      "type": "code",
+      "language": "sql",
+      "data": "show create table table"
+    },
+    {
+      "type": "code",
+      "language": "sql",
+      "data": "CREATE TABLE `cpk.mlb_test_log_detail_forDecisionTreeD10WithNTF`(\n  `serial_number` string, \n  `test_result` string, \n  `test_start_time` string, \n  `version` string, \n  `line` string, \n  `machine` string, \n  `test_type` string, \n  `slot` string, \n  `items` map<string,string>)\nPARTITIONED BY ( \n  `hour` string, \n  `model` string, \n  `station` string,\n  'fail_location', string)"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "title": "Dealing with missing data",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "### PANDAS PHILOSOPHY"
+    },
+    {
+      "type": "markdown",
+      "data": "- To signal a missing value, Pandas stores a NaN (Not a Number) value defined in NumPy (np.nan)\n- "
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

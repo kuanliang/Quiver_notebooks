@@ -1,0 +1,61 @@
+{
+  "title": "Notes:Advances in Deep Learning for Vision,with Applications to Industrial Inspection",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "### A learnable systems that can be used to improve recognition and detection without requiring hard to obtain task-specific domain knowledge.\n\n- max-pooling convolutional networks\n- Scaling\n- morphological operators\n- multinodal similarity sensitive hashing model"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "markdown",
+      "data": "2 stages:\n\n- segment the defective region from the background\n\n- classify the defect in the image, if any is present"
+    },
+    {
+      "type": "text",
+      "data": "## Traditional ad-hoc algorithm<div>1. taking the horizontal image gradient</div><div>2. applying a threshold</div>"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/A1C21C72A60ADC6BC5335DC9F83F2BA4.jpg\">"
+    },
+    {
+      "type": "markdown",
+      "data": "- intra-class variability (within the same class defects instances vary greatly)\n\n- inter-class variability (apparently similar defects belong to different classes)"
+    },
+    {
+      "type": "markdown",
+      "data": "### ASIS - Automatic Surface Inspection System\n\n1. Acuistion\n2. Image Enhancement\n  - mathematical morphology \n  - remove noise, enhance given strutures\n3. Segmentation\n  - \n4. Detection\n5. Feature extraction\n6. Classification"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

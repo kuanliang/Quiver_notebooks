@@ -1,0 +1,10 @@
+{
+  "title": "select return tables",
+  "cells": [
+    {
+      "type": "code",
+      "language": "sql",
+      "data": "set mapred.reduce.tasks=50;\ninsert overwrite table cpk.mlb_test_log_detail_for_test0824\npartition (hour,model,station)\nselect C.serial_number,test_result,test_start_time,version,line,machine,test_type,slot,items,fail_location,hour,model,station\nfrom (SELECT DISTINCT A.serial_number,fail_location\n      FROM (select serial_number, add_date\n            from (SELECT serial_number, add_date, row_number() over (partition by serial_number order by add_date) rankno\n                  FROM cpk.mlb_rpc_stage\n                  WHERE day >= '2016-08-10' and\n                        namec = 'CRB Check In'\n                 ) X where rankno = 1\n           ) A INNER JOIN\n           (SELECT serial_number,fail_location, add_date\n            FROM cpk.mlb_rpc_stage\n            WHERE day >= '2016-08-10'\n           ) B\n           ON A.serial_number = B.serial_number\n           where A.add_date <= B.add_date\n     ) C inner join\n     (select serial_number,test_result,test_start_time,version,line,machine,test_type,slot,items,hour,model,station\n      from (select serial_number,test_result,test_start_time,version,line,machine,test_type,slot,items,hour,model,station\n            from cpk.mlb_test_log_detail\n            where model = 'D10' and\n                  station = 'FCT' and\n                  hour between '2016-08-10_00' and '2016-08-25_24' and\n                  upper(test_result) = 'PASS' and\n                  substr(line,7,3) not in ('CRB','CRT', 'TFB', 'RMA', 'RMT') and\n                  substr(line,1,6) not in ('L07-2F', 'D03-3F') and\n           ) X\n     ) D\non C.serial_number = D.serial_number;\n"
+    }
+  ]
+}

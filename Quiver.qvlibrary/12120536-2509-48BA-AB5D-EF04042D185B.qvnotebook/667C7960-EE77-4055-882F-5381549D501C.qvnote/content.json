@@ -1,0 +1,94 @@
+{
+  "title": "transform MAP to SparkDF (ML)",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "**Step 1.** Extract Hive table with hc.sql and stored to returnDf and passDf Spark dataframe.\n\n**Step 2.** Create a matrix Spark dataframe where each column is test item.\n    a. Pickle load colInfo object\n    b. Create a RDD where each RDD is a list of all test values (filtered by colInfo)\n    c. Create schema for ML matrix\n\n**Step 3.** Add return column to both itemValuesDf.\n\n**Step 4.** Combine two Spark dataframes.\n"
+    },
+    {
+      "type": "markdown",
+      "data": "**Step 1.** Extract Hive table with hc.sql and stored them to returnDf, passDf"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "sql1 = \"select serial_number,test_result,test_start_time,version,line,machine,test_type,slot,items,hour,model,station,\\\n        fail_location from (select serial_number,test_result,test_start_time,version,line,machine,test_type,slot,items,\\\n        hour,model,station,fail_location,row_number() over (partition by serial_number order by test_start_time desc)\\\n        rankno\\\n        from cpk.mlb_test_log_detail_for_test0824\\\n        ) X\\\n        where rankno = 1\\\n        and substr('line', 7, 3) not in ('TFB')\\\n        and substr('line', 1, 6) not in ('L07-2F', 'D03-3F')\""
+    },
+    {
+      "type": "text",
+      "data": "<br>"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "sql2 = \"select serial_number,test_result,test_start_time,version,line,machine,test_type,slot,items,hour,model,station,\\\n        fail_location from cpk.mlb_test_log_detail_for_test0825\\\n        where substr('line', 7, 3) not in ('TFB')\\\n        and substr('line', 1, 6) not in ('L07-2F')\\\n        and substr('line', 1, 6) not in ('D03-3F')\""
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "returnDf = hc.sql(sql1)\npassDf = hc.sql(sql2)"
+    },
+    {
+      "type": "markdown",
+      "data": "Create an RDD where each RDD is a list of all test values (filtered by colInfo."
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "itemValuesNoneDf = (passDf[['items']].map(lambda x: x.items)\n                                 .map(lambda x: [getKeyValue(x, col) if col in colInfo['preprocess']['final'] else None for col in colInfo['preprocess']['final']])\n                                 .map(lambda x: [float(a) if isFloat(a) else None for a in x]))"
+    },
+    {
+      "type": "markdown",
+      "data": "Create the schema for ML matrix df"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "from pyspark.sql import SQLContext\nfrom pyspark.sql.types import *\n\nfields = [StructField(field_name, FloatType(), True) for field_name in schemaList]\n\nschema = StructType(fields)"
+    },
+    {
+      "type": "text",
+      "data": "Then we can create the ML dataframe for machine learning modeling"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "schemaItemsDf = sqlContext.createDataFrame(itemValuesNoneDf, schema)"
+    },
+    {
+      "type": "text",
+      "data": "Finally add the label column (return or not)"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "from pyspark.sql.functions import lit\nmatrixPassDf = schemaItemsDf.withColumn('return', lit(0))"
+    },
+    {
+      "type": "markdown",
+      "data": "Use the same process for **returnDf**"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "itemValuesReturnDf = (returnDf[['items']].map(lambda x: x.items)\n                                 .map(lambda x: [getKeyValue(x, col) if col in colInfo['preprocess']['final'] else None for col in colInfo['preprocess']['final']])\n                                 .map(lambda x: [float(a) if isFloat(a) else None for a in x]))\n                                 \nschemaItemsReturnDf = sqlContext.createDataFrame(itemValuesReturnDf, schema)\n\nschemaItemsReturnDf = sqlContext.createDataFrame(itemValuesReturnDf, schema)\nmatrixReturnDf = schemaItemsDf.withColumn('return', lit(1))"
+    },
+    {
+      "type": "markdown",
+      "data": "Combine two matrix, matrixPass and matrixReturn with unionAll"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "matrixAllDf = matrixPassDf.unionAll(matrixReturnDf)"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

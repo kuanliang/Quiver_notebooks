@@ -1,0 +1,21 @@
+{
+  "title": "RNN - Recurrent Neural Network",
+  "cells": [
+    {
+      "type": "text",
+      "data": "LSTM Networks - LSTMs"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/A7BEA0A94AF46AD0D5391230CD04FECB.jpg\">"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/94A5888406AF16E9DA596224767EB7AB.jpg\">"
+    },
+    {
+      "type": "markdown",
+      "data": "The key to LSTMs is the cell state, the horizontal line running through the top of the diagram."
+    }
+  ]
+}

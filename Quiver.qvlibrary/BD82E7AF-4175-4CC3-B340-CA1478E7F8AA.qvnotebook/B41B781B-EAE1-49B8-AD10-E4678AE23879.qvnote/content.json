@@ -1,0 +1,13 @@
+{
+  "title": "Markov Decision Process",
+  "cells": [
+    {
+      "type": "text",
+      "data": "STATES: S<div>MODEL: T(s, a, s’) ~ Pr(s’ | s, a)</div><div>ACTIONS: A(s)</div><div>REWARD: R(s), R(s, a), R(s, a, s’)</div>"
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "title": "JavaScript tutorial",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "- comment"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "// This is comment"
+    },
+    {
+      "type": "markdown",
+      "data": "- confirm"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "confirm(\"I feel awesome\")"
+    },
+    {
+      "type": "markdown",
+      "data": "- Prompt"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "prompt(\"What is your name?\")"
+    },
+    {
+      "type": "markdown",
+      "data": "- Using console.log"
+    },
+    {
+      "type": "code",
+      "language": "javascript",
+      "data": "console.log('2*5')\nconsole.log('hello')"
+    },
+    {
+      "type": "markdown",
+      "data": "- Comparison"
+    },
+    {
+      "type": "text",
+      "data": "<ul style=\"padding: 0px; margin: 0px; list-style: none; box-sizing: border-box; font-family: 'Open Sans', 'Hevetica Neue', Helvetica, sans-serif; font-size: 15px; line-height: 22px; orphans: 2; widows: 2; background-color: rgb(255, 255, 255);\"><li style=\"line-height: 20px; box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); margin-top: 9px; margin-bottom: 9px;\"><code class=\"undefined\" style=\"box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0.15em 0.25em; font-size: 0.85em; line-height: inherit; border-radius: 2px; border: 1px solid rgba(0, 0, 0, 0.0666667); font-family: Monaco, Menlo, &quot;Ubuntu Mono&quot;, Consolas, source-code-pro, monospace; background-color: rgba(0, 0, 0, 0.0470588);\">&gt;</code>&nbsp;Greater than<br style=\"box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\"></li><li style=\"line-height: 20px; box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); margin-top: 9px; margin-bottom: 9px;\"><code class=\"undefined\" style=\"box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0.15em 0.25em; font-size: 0.85em; line-height: inherit; border-radius: 2px; border: 1px solid rgba(0, 0, 0, 0.0666667); font-family: Monaco, Menlo, &quot;Ubuntu Mono&quot;, Consolas, source-code-pro, monospace; background-color: rgba(0, 0, 0, 0.0470588);\">&lt;</code>&nbsp;Less than<br style=\"box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\"></li><li style=\"line-height: 20px; box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); margin-top: 9px; margin-bottom: 9px;\"><code class=\"undefined\" style=\"box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0.15em 0.25em; font-size: 0.85em; line-height: inherit; border-radius: 2px; border: 1px solid rgba(0, 0, 0, 0.0666667); font-family: Monaco, Menlo, &quot;Ubuntu Mono&quot;, Consolas, source-code-pro, monospace; background-color: rgba(0, 0, 0, 0.0470588);\">&lt;=</code>&nbsp;Less than or equal to<br style=\"box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\"></li><li style=\"line-height: 20px; box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); margin-top: 9px; margin-bottom: 9px;\"><code class=\"undefined\" style=\"box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0.15em 0.25em; font-size: 0.85em; line-height: inherit; border-radius: 2px; border: 1px solid rgba(0, 0, 0, 0.0666667); font-family: Monaco, Menlo, &quot;Ubuntu Mono&quot;, Consolas, source-code-pro, monospace; background-color: rgba(0, 0, 0, 0.0470588);\">&gt;=</code>&nbsp;Greater than or equal to<br style=\"box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\"></li><li style=\"line-height: 20px; box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); margin-top: 9px; margin-bottom: 9px;\"><code class=\"undefined\" style=\"box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0.15em 0.25em; font-size: 0.85em; line-height: inherit; border-radius: 2px; border: 1px solid rgba(0, 0, 0, 0.0666667); font-family: Monaco, Menlo, &quot;Ubuntu Mono&quot;, Consolas, source-code-pro, monospace; background-color: rgba(0, 0, 0, 0.0470588);\">===</code>&nbsp;Equal to</li><li style=\"line-height: 20px; box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); margin-top: 9px; margin-bottom: 9px;\"><code class=\"diff\" style=\"box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0.15em 0.25em; font-size: 0.85em; line-height: inherit; border-radius: 2px; border: 1px solid rgba(0, 0, 0, 0.0666667); font-family: Monaco, Menlo, &quot;Ubuntu Mono&quot;, Consolas, source-code-pro, monospace; background-color: rgba(0, 0, 0, 0.0470588);\"><span class=\"change\" style=\"box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);\">!==</span></code>&nbsp;<strong style=\"box-sizing: border-box;\">Not</strong>&nbsp;equal to</li></ul>"
+    },
+    {
+      "type": "markdown",
+      "data": "- Decision (condition)"
+    },
+    {
+      "type": "text",
+      "data": "<pre style=\"box-sizing: border-box; color: rgb(197, 200, 198); border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; overflow: auto; padding: 7px 10px; font-size: 15px; line-height: 20px; orphans: 2; widows: 2; background-color: rgb(35, 44, 49);\"><code class=\"java\" style=\"box-sizing: border-box; font-family: Monaco, Menlo, 'Ubuntu Mono', Consolas, source-code-pro, monospace; font-size: 0.85em; line-height: 1.5; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; border: 1px solid rgba(0, 0, 0, 0.0666667); background-color: rgba(0, 0, 0, 0.0470588);\"><span class=\"keyword\" style=\"box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); color: rgb(178, 148, 187);\">if</span> (condition) \n{\n    <span class=\"comment\" style=\"box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); color: rgb(150, 152, 150); font-style: italic;\">// if condition is true</span>\n    <span class=\"comment\" style=\"box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); color: rgb(150, 152, 150); font-style: italic;\">// do this code</span>\n}\n<span class=\"keyword\" style=\"box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); color: rgb(178, 148, 187);\">else</span> <span class=\"comment\" style=\"box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); color: rgb(150, 152, 150); font-style: italic;\">// \"otherwise\"</span>\n{\n    <span class=\"comment\" style=\"box-sizing: border-box; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); color: rgb(150, 152, 150); font-style: italic;\">// do this code instead</span>\n}</code></pre>"
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

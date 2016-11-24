@@ -1,0 +1,23 @@
+{
+  "title": "Untitled Note",
+  "cells": [
+    {
+      "type": "diagram",
+      "diagramType": "sequence",
+      "data": "Title: Here is a title\nA->B: Normal line"
+    },
+    {
+      "type": "diagram",
+      "diagramType": "sequence",
+      "data": "st=>start: Start:>http://www.google.com[blank]"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

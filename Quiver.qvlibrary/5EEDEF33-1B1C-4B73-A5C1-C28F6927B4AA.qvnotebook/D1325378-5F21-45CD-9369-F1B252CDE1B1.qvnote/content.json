@@ -1,0 +1,10 @@
+{
+  "title": "Select Hive table and stored to local disk",
+  "cells": [
+    {
+      "type": "code",
+      "language": "sql",
+      "data": ""
+    }
+  ]
+}

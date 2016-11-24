@@ -1,0 +1,13 @@
+{
+  "title": "Backpropagation",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "How Neural Networks are trained?\n\nThe gradiant points to the direction that maximally changes in an increasing way of function, thus a "
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

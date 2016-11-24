@@ -1,0 +1,33 @@
+{
+  "title": "Defectlib Tutorial",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "這份文件說明defectlib套件的內容以及使用方式"
+    },
+    {
+      "type": "text",
+      "data": "&nbsp;defectlib中包含下列模組，每一個模組主要是以其在機器學習模型建立過程中的各個功能面切分，並依其執行功能來命名模組，例如DataIO主要是處理原始圖面資料的讀入與輸出，Transformt處理讀入資料後的資料矩陣轉換，Model建立模型，以及各種模型驗證機制的設計，其他模組功能請參考個模組介紹小節．"
+    },
+    {
+      "type": "markdown",
+      "data": "1. DataIO\n2. Transform\n3. Model\n4. Display\n5. Config\n6. Utils\n7. imutils"
+    },
+    {
+      "type": "markdown",
+      "data": "### DataIO"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

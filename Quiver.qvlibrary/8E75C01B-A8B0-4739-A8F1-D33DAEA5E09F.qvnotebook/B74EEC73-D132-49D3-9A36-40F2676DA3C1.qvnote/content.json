@@ -1,0 +1,37 @@
+{
+  "title": "Image Preprocessing - tips and tricks before deep learning",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "### index"
+    },
+    {
+      "type": "markdown",
+      "data": "1. data Augmentation\n2. pre-processing on images\n3. initializations of Networks\n4. some tips during training\n5. selections of activation functions\n6. diverse regularizations\n7. some insights found from figures\n8. methos of ensemble multiple deep networks"
+    },
+    {
+      "type": "markdown",
+      "data": "## Data augmentation"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "markdown",
+      "data": "## Pre-processing"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/7E9D29E1DCA29CE0DD21F146C5BB1F69.jpg\">"
+    },
+    {
+      "type": "markdown",
+      "data": "## During training"
+    },
+    {
+      "type": "markdown",
+      "data": "- Filters and pooling size\n- Learning rate\n- Fine-tune on pre-trained models"
+    }
+  ]
+}

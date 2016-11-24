@@ -1,0 +1,45 @@
+{
+  "title": "BOSCH Production Line Performance",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "## Goal: Predict which parts will fail quality control"
+    },
+    {
+      "type": "markdown",
+      "data": "### Data: \n\nThe dataset contains an extremely large number of anonymized features. Features are named according to a convention that tells you the production line, thet station on the line, and the feature number.\n\nE.g. \nL3_S36_F3939 => a feature measured on line 3, station 36, and is feature number 3939\n\n#### features\n- categorial data\n- numerical data \n\n#### label\n- Binary (response=1 or 0)"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "markdown",
+      "data": "## Data Files"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": "The data for this come"
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

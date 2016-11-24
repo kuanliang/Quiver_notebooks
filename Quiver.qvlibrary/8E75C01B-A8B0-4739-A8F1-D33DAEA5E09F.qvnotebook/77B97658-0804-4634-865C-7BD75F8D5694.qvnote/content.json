@@ -1,0 +1,40 @@
+{
+  "title": "Theano - Regression",
+  "cells": [
+    {
+      "type": "code",
+      "language": "python",
+      "data": "from theano import tensor as T\nfrom theano import function\nimport theano"
+    },
+    {
+      "type": "markdown",
+      "data": "## Theano model"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "# declared symbolic variables\nX, Y = T.vectors('input', 'target')\n# shared variables W, B\nW = theano.shared(.01)\nB = theano.shared(0.)\n# declared symbolic variable\nZ = W*X + B\n\nCost = ((Y-Z)**2).mean()"
+    },
+    {
+      "type": "markdown",
+      "data": "## Training the model"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "params = [W, B]\nlr = .1\ngrads = [T.grad(Cost, p) for p in params]\nupdates = [(p, p - lr*g) for g in grads]\ntrain = function([X, Y], Cost, updates=updates, allow_input_downcast=True)\n\nepochs = 30\nfor i in range(epochs):\n  what, bhat = W.get_value(), B.get_value()"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

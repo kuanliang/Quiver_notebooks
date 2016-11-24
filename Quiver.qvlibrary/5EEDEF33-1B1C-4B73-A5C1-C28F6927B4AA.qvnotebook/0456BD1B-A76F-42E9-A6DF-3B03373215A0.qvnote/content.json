@@ -1,0 +1,10 @@
+{
+  "title": "select pass tables ",
+  "cells": [
+    {
+      "type": "code",
+      "language": "sql",
+      "data": "set mapred.reduce.tasks=50;\ninsert overwrite table cpk.mlb_test_log_detail_for_test0825\npartition (hour,model,station)\n select A.serial_number,test_result,test_start_time,version,line,machine,test_type,slot,items,'' as fail_location,hour,model,station\n from\n     (select serial_number,test_result,test_start_time,version,line,machine,test_type,slot,items,hour,model,station\n      from cpk.mlb_test_log_detail\n      where model = 'D10' and\n            station = 'FCT' and\n            hour between '2016-08-10_00' and '2016-08-25_24' and\n            upper(test_result) = 'PASS' and\n            substr(line,7,3) not in ('CRB','CRT', 'TFB', 'RMA', 'RMT') and\n            substr(line,1,6) not in ('L07-2F', 'D03-3F') and \n            upper(test_result) = 'PASS'\n     ) A\n left join\n     (SELECT distinct serial_number\n      FROM cpk.mlb_rpc_stage\n      WHERE day >= '2016-08-10' and\n            namec = 'CRB Check In'\n     ) B\n on A.serial_number = B.serial_number\n where B.serial_number is null;"
+    }
+  ]
+}

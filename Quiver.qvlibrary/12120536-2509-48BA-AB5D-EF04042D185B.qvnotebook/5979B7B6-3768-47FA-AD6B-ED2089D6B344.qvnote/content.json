@@ -1,0 +1,31 @@
+{
+  "title": "pyspark.sql.functions.split",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "Splits str around pattern (pattern is a regular expression)"
+    },
+    {
+      "type": "text",
+      "data": "Note: pattern is a string represent the regular expression"
+    },
+    {
+      "type": "code",
+      "language": "sql",
+      "data": "returnDf[['test_start_time']].show()"
+    },
+    {
+      "type": "text",
+      "data": "<pre style=\"box-sizing: border-box; overflow: auto; font-size: 14px; padding: 0px; margin-top: 0px; margin-bottom: 0px; line-height: 17.000059127807617px; word-break: break-all; word-wrap: break-word; color: rgb(0, 0, 0); border: 0px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; white-space: pre-wrap; vertical-align: baseline;\"><pre style=\"box-sizing: border-box; overflow: auto; padding: 0px; margin-top: 0px; margin-bottom: 0px; word-break: break-all; word-wrap: break-word; border: 0px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; white-space: pre-wrap; vertical-align: baseline;\">+-------------------+\n|    test_start_time|\n+-------------------+\n|2016-08-14 03:47:11|\n|2016-08-14 03:27:00|\n|2016-08-14 03:00:00|\n|2016-08-14 03:39:00|\n|2016-08-14 03:43:00|\n|2016-08-14 03:52:00|\n|2016-08-14 03:52:00|\n|2016-08-14 03:16:00|\n|2016-08-14 03:21:00|\n|2016-08-14 03:57:00|\n|2016-08-14 03:46:00|\n|2016-08-14 03:46:00|\n|2016-08-14 03:46:00|\n|2016-08-14 03:17:00|\n|2016-08-14 03:17:00|\n|2016-08-14 03:17:00|\n|2016-08-14 03:11:14|\n|2016-08-14 03:11:14|\n|2016-08-14 03:56:00|b\n|2016-08-14 03:56:00|\n+-------------------+\nonly showing top 20 rows</pre></pre><div><br></div>"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "# import the split function\nfrom pyspark.sql.functions import split\nreturnTimeDf = returnDf.withColumn('day', split(returnDf.test_start_time, ' ')[0])\nreturnTimeDf.show()"
+    },
+    {
+      "type": "text",
+      "data": "<pre style=\"box-sizing: border-box; overflow: auto; font-size: 14px; padding: 0px; margin-top: 0px; margin-bottom: 0px; line-height: 17.000059127807617px; word-break: break-all; word-wrap: break-word; color: rgb(0, 0, 0); border: 0px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; white-space: pre-wrap; vertical-align: baseline;\">+-------------------+----------+\n|    test_start_time|      date|\n+-------------------+----------+\n|2016-08-14 03:47:11|2016-08-14|\n|2016-08-14 03:27:00|2016-08-14|\n|2016-08-14 03:00:00|2016-08-14|\n|2016-08-14 03:39:00|2016-08-14|\n|2016-08-14 03:43:00|2016-08-14|\n|2016-08-14 03:52:00|2016-08-14|\n|2016-08-14 03:52:00|2016-08-14|\n|2016-08-14 03:16:00|2016-08-14|\n|2016-08-14 03:21:00|2016-08-14|\n|2016-08-14 03:57:00|2016-08-14|\n|2016-08-14 03:46:00|2016-08-14|\n|2016-08-14 03:46:00|2016-08-14|\n|2016-08-14 03:46:00|2016-08-14|\n|2016-08-14 03:17:00|2016-08-14|\n|2016-08-14 03:17:00|2016-08-14|\n|2016-08-14 03:17:00|2016-08-14|\n|2016-08-14 03:11:14|2016-08-14|\n|2016-08-14 03:11:14|2016-08-14|\n|2016-08-14 03:56:00|2016-08-14|\n|2016-08-14 03:56:00|2016-08-14|\n+-------------------+----------+</pre>"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "title": "utilities",
+  "cells": [
+    {
+      "type": "text",
+      "data": "show image on ipython notebook"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "import matplotlib.pyplot as plt\nplt.imshow(image)"
+    },
+    {
+      "type": "text",
+      "data": "display image"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "from IPython.display import display, Image\ndisplay(Image(image)"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

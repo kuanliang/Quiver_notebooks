@@ -1,0 +1,10 @@
+{
+  "title": "Pie plot with matplotlib",
+  "cells": [
+    {
+      "type": "code",
+      "language": "python",
+      "data": "def plot_pie(series):\n    '''plot pie chart according to provided Pandas series\n    \n    Notes:\n    \n    Args:\n    \n    Return:\n    \n    '''\n    labelCountSeries = series.value_counts()\n    labelList = [label[0] for label in labelCountSeries.iteritems()]\n    print labelList\n    sizeList = [size[1] for size in labelCountSeries.iteritems()]\n    print sizeList\n    try:\n        plt.pie(sizeList, labels=labelList, autopct='%1.1f%%')\n    except:\n        print 'the length of sizes: {}'.format(len(sizeList))\n        print 'the length of labels: {}'.format(len(labelList))"
+    }
+  ]
+}
