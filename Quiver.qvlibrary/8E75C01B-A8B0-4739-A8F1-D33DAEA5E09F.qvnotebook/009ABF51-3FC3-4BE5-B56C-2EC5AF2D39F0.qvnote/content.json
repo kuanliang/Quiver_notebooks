@@ -1,0 +1,17 @@
+{
+  "title": "Visualizing and Understanding Convolutional Networks",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/99DFE738CCA7494FF0AA16366B232E7F.jpg\"><br>"
+    },
+    {
+      "type": "text",
+      "data": "In this paper, we introduce a visualization technique that reveals the input stimuli that excite individual feature maps at any layer in the model."
+    },
+    {
+      "type": "text",
+      "data": "It&nbsp;"
+    }
+  ]
+}

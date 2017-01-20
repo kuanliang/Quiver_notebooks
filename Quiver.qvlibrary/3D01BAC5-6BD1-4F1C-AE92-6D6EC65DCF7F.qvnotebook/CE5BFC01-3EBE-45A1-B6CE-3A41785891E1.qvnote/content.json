@@ -1,6 +1,22 @@
 {
-  "title": "Variables",
+  "title": "tensorflow TF",
   "cells": [
+    {
+      "type": "text",
+      "data": "tf.Variable"
+    },
+    {
+      "type": "text",
+      "data": "tf.zeros(shape)"
+    },
+    {
+      "type": "text",
+      "data": "tf.random_uniform(shape)"
+    },
+    {
+      "type": "text",
+      "data": "tf.initialize_all_variables().run()"
+    },
     {
       "type": "text",
       "data": ""

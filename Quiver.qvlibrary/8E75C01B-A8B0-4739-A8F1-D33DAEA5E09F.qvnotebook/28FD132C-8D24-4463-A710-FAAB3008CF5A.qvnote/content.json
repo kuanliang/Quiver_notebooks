@@ -1,0 +1,37 @@
+{
+  "title": "Design of deep convolutional neural network architectures for automated feature extraction in industrial inspection",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/635855D758DF171A18332BBDA76D0001.jpg\">"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/D6BA0A4175D01574B48CAB0B9D267B76.jpg\">"
+    },
+    {
+      "type": "text",
+      "data": "&lt;conv3-NKx&gt;"
+    },
+    {
+      "type": "markdown",
+      "data": "## Context-aware Patch Arrangement"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/C63BD91A07A09B62D9FFE1C86EC70258.jpg\">"
+    },
+    {
+      "type": "text",
+      "data": "The main contribution of this work is to investigation of the impact of context-aware patch extraction as the input for CNN to detect visual defects."
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/D951BCAEA526A546661E712E0CE67686.jpg\">"
+    },
+    {
+      "type": "text",
+      "data": "Figure 4 shows an example from the dataset and the resulting detection heat map for the network."
+    }
+  ]
+}

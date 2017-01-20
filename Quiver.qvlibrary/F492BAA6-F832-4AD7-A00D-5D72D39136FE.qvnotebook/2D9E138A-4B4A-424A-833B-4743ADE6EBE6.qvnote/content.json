@@ -7,6 +7,11 @@
       "data": "export http_proxy=http://22398:1qaz2wsx@10.191.131.2:3128\nexport https_proxy=http://22398:1qaz2wsx@10.191.131.2:3128"
     },
     {
+      "type": "code",
+      "language": "python",
+      "data": "export http_proxy=http://wisecloud:58625021@10.57.198.45:50030\nexport https_proxy=http://wisecloud:58625021@10.57.198.45:50030"
+    },
+    {
       "type": "text",
       "data": ""
     }

@@ -18,6 +18,34 @@
       "data": "git config —global user.name ‘kuanliang’<div>git config —global user.email kiangliu@gmail.com</div>"
     },
     {
+      "type": "markdown",
+      "data": "## move through the change history"
+    },
+    {
+      "type": "text",
+      "data": "git checkout tag"
+    },
+    {
+      "type": "markdown",
+      "data": "## revert the files to their original state"
+    },
+    {
+      "type": "text",
+      "data": "git reset —hard"
+    },
+    {
+      "type": "markdown",
+      "data": "## update the commit history and the tags in your local reposotory from the \n## remote one on GitHub"
+    },
+    {
+      "type": "text",
+      "data": "git fetch —all<div>git fetch —tags</div><div>git reset —hard origin/master</div>"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
       "type": "text",
       "data": ""
     },

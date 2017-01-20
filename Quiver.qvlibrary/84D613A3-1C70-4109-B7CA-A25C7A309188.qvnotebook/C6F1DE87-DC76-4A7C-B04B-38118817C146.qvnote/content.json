@@ -1,4 +1,9 @@
 {
   "title": "Untitled Note",
-  "cells": []
+  "cells": [
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
 }

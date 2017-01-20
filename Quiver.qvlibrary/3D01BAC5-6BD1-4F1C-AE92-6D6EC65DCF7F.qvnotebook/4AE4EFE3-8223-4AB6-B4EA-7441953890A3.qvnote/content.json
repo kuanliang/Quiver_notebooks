@@ -1,0 +1,114 @@
+{
+  "title": "Simple Linear Model",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "### Placeholder Variables:"
+    },
+    {
+      "type": "text",
+      "data": "X"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "X = tf.placeholder(tf.float32, [None, mg_size_flat])"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/9366DD3CB625278C07AAF6223CE88A75.jpg\">"
+    },
+    {
+      "type": "text",
+      "data": "y_true"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "y_true = tf.placeholder(tf.float32, [None, num_classes])"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/6F778847A075ADC62128BBD002D08CDB.jpg\">"
+    },
+    {
+      "type": "text",
+      "data": "y_true_cls"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "y_true_cls = tf.placeholder(tf.int64, [None])"
+    },
+    {
+      "type": "markdown",
+      "data": "### Variables to be optimized"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "weights = tf.Variable(tf.zeros([img_size_flat, num_classes]))"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/22810711C2F2528D9068DB539FEF9618.jpg\">"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "biases = tf.Variable(tf.zeros([num_classes]))"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/6020DF788AF3159721D11F6C50D54DD8.jpg\">"
+    },
+    {
+      "type": "markdown",
+      "data": "### Model"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "logits = tf.matmul(x, weights) + biases"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/2658852577A8C64E57E8BF6C2CBDC396.jpg\">"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "y_pred = tf.nn.softmax(logits)"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/164871416B33F860D42B2EAE8C976A7A.jpg\"><img src=\"quiver-image-url/808BD1DBF76BAFFF85677F7B8EEFDD0F.jpg\">"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "y_pred_cls = tf.argmax(y_pred, dimension=1)"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/C852333CEC099BACD3AF5C6856369F26.jpg\">"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "cross_entropy = tf.nn.softmax_cross_entropy_with_logits(logits=logits,\n                                                        labels=y_true)"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/78AD6ECBFB296AC5221EA80F4651BE77.jpg\">"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

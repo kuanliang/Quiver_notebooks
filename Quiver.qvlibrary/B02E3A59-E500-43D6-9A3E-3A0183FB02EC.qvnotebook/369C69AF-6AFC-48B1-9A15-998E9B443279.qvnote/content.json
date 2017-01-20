@@ -1,0 +1,65 @@
+{
+  "title": "Learning Notes",
+  "cells": [
+    {
+      "type": "text",
+      "data": "Flask has two main dependencies.<div>- The routing, debugging, and the Web Server Gateway Interface (WSGI) subsystems come from Werkzeug, while template support is provided by Jinja2.</div>"
+    },
+    {
+      "type": "markdown",
+      "data": "## Routes and View Functions\nClients such as web browsers send requests to the web server, which in turn sends them to the Flask application instance. The application instance needs to know what code needs to run for each URL requested, so it keeps a mapping of URLs to Python functions. The association between a URL and the function that handles it is called a route."
+    },
+    {
+      "type": "text",
+      "data": "\n\t\t\n\t\n\t\n\t\t<div class=\"page\" title=\"Page 28\">\n\t\t\t<div class=\"layoutArea\">\n\t\t\t\t<div class=\"column\">\n\t\t\t\t\t<p><span style=\"font-size: 11.000000pt; font-family: 'MinionPro'\">The most convenient way to define a route in a Flask application is through the\n</span><span style=\"font-size: 10.000000pt; font-family: 'UbuntuMono'\">app.route </span><span style=\"font-size: 11.000000pt; font-family: 'MinionPro'\">decorator exposed by the application instance, which registers the decorated\nfunction as a route. The following example shows how a route is declared using this\ndecorator:&nbsp;</span></p>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/AFCBD6083CE41B0F7CF891E05C508856.jpg\">"
+    },
+    {
+      "type": "text",
+      "data": "The following example defines a route that has a dynamic name component:"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/8361B35ADBABC71727E74C14768202B6.jpg\">"
+    },
+    {
+      "type": "markdown",
+      "data": "## Server Startup"
+    },
+    {
+      "type": "markdown",
+      "data": "## A Complete Application"
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/B1C7D7D0EB6616302466D2E0CDE13B3A.jpg\">"
+    },
+    {
+      "type": "markdown",
+      "data": "## The Request-Response Cycle"
+    },
+    {
+      "type": "markdown",
+      "data": "## Application and Request Contexts"
+    },
+    {
+      "type": "text",
+      "data": "To avoid cluttering view functions with lots of arguments that may or may not be needed, Flask uses contexts to temporarily make certain objects globally accessible. Thanks to contexts, view functions like the following one can be written:"
+    },
+    {
+      "type": "markdown",
+      "data": "## Request Hooks\n\n- before_first_request\n- before_request\n- after_request\n- teardown_request"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "title": "Notes",
+  "cells": [
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": "<img src=\"quiver-image-url/705EED133AF558649020C47F5D95BD73.jpg\">"
+    },
+    {
+      "type": "text",
+      "data": "Even as you accumulate more data, usually the performance of older learning algorithms, such as logistic regression, “plateaus.” This means its learning curve “flattens out,” and the algorithm stops improving even as you give it more data. It was as if the older algorithms did’t know what to do with all the data we now have."
+    },
+    {
+      "type": "text",
+      "data": "If you train a small NN on the same supervised learning task, you might get slightly better performance."
+    },
+    {
+      "type": "text",
+      "data": "Finally, if you train larger and larger neural networks, you can obtain even better performance."
+    },
+    {
+      "type": "text",
+      "data": "Thus, you obtain the best performance when you (i) Train a very large neural network, so that you are on the green curve above; (ii) Have a huge amount of data."
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "title": "t-SNE (t-Distributed Stochastic Neighbor Embedding)",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<span style=\"color: rgba(0, 0, 0, 0.8); font-family: 'Open Sans', sans-serif; font-size: 18px; orphans: 2; widows: 2; background-color: rgb(252, 252, 252);\">t-SNE, introduced by&nbsp;</span><a href=\"https://lvdmaaten.github.io/publications/papers/JMLR_2008.pdf\" style=\"text-decoration: none; background-image: linear-gradient(rgba(0, 0, 0, 0.247059) 50%, rgba(0, 0, 0, 0) 50%); font-family: 'Open Sans', sans-serif; font-size: 18px; orphans: 2; widows: 2; background-color: rgb(252, 252, 252); background-position: 0px 1.28em; background-repeat: repeat no-repeat;\">van der Maaten and Hinton in 2008</a><span style=\"color: rgba(0, 0, 0, 0.8); font-family: 'Open Sans', sans-serif; font-size: 18px; orphans: 2; widows: 2; background-color: rgb(252, 252, 252);\">.&nbsp;</span>"
+    },
+    {
+      "type": "text",
+      "data": ""
+    },
+    {
+      "type": "text",
+      "data": "The algorithm is non-linear and adapts to the underlying data, performng different transformations on different regions. Those differences can ba a major source of confusion."
+    },
+    {
+      "type": "text",
+      "data": "<span style=\"color: rgba(0, 0, 0, 0.8); font-family: 'Open Sans', sans-serif; font-size: 18px; orphans: 2; widows: 2; background-color: rgb(252, 252, 252);\">A second feature of t-SNE is a tuneable parameter, “perplexity,” which says (loosely) how to balance attention between local and global aspects of your data.</span>"
+    },
+    {
+      "type": "text",
+      "data": "<span style=\"color: rgba(0, 0, 0, 0.8); font-family: 'Open Sans', sans-serif; font-size: 18px; orphans: 2; widows: 2; background-color: rgb(252, 252, 252);\">The original paper says,&nbsp;</span><em style=\"color: rgba(0, 0, 0, 0.8); font-family: 'Open Sans', sans-serif; font-size: 18px; orphans: 2; widows: 2; background-color: rgb(252, 252, 252);\">“The performance of SNE is fairly robust to changes in the perplexity, and typical values are between 5 and 50.”</em>"
+    }
+  ]
+}

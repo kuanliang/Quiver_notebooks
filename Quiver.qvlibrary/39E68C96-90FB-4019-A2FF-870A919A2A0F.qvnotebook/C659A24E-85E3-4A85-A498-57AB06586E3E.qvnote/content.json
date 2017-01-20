@@ -1,0 +1,18 @@
+{
+  "title": "Notes",
+  "cells": [
+    {
+      "type": "markdown",
+      "data": "### adding kernel to jupyter notebook"
+    },
+    {
+      "type": "code",
+      "language": "python",
+      "data": "python3 -m pip install jupyterhub notebook ipykernel\npython3 -m ipykernel install # register python 3 kernel (not technically necessary at this point)\npython2 -m pip install ipykernel\npython2 -m ipykernel install # register python 2 kernel"
+    },
+    {
+      "type": "text",
+      "data": ""
+    }
+  ]
+}
